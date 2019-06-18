@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Type</ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content padding>
+  <ion-list lines="full">
+    <ion-item>
+      <ion-input color="primary" required type="text" placeholder="company" [(ngModel)]="todo.company"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input color="primary" required type="text" placeholder="url" [(ngModel)]="todo.url"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input color="primary" required type="text" placeholder="contact" [(ngModel)]="todo.contact"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" (click)="saveTodo()">Save</ion-button>
+</ion-content>
